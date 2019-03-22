@@ -1,6 +1,6 @@
-pipelineJob('PHP_Pipeline') {
+pipelineJob('Webapp2_Pipeline') {
 
-  def repo = 'https://github.com/venkatr87/Webapp1.git'
+  def repo = 'https://github.com/venkatr87/Webapp2-DockerContainer.git'
 
   triggers {
     scm('H/5 * * * *')
