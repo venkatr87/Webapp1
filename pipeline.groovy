@@ -9,7 +9,7 @@ pipelineJob('Webapp2_Pipeline') {
   
    parameters {
      choiceParam{
-       name(String 'Environment')
+       name('Environment')
        choices(Object 'Dev', 'Test')
      }
     }
