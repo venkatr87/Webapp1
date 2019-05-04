@@ -8,7 +8,7 @@ pipelineJob('Webapp2_Pipeline') {
   description("Pipeline for Webapp2")
   
    parameters {
-     choiceParam{
+     choice{
        name('Environment')
        description('Select the Environment')
        choices('Dev', 'Test', 'UAT', 'Staging', 'Prod')
