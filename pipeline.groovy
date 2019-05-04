@@ -8,7 +8,7 @@ pipelineJob('Webapp2_Pipeline') {
   description("Pipeline for Webapp2")
   
    parameters {
-        stringParam('SERVER_ID', SERVER_ID, 'Enter Environment ID')
+        stringParam('Enter Environment ID')
     }
   
   definition {
