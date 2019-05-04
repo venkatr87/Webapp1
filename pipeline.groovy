@@ -5,7 +5,11 @@ pipelineJob('Webapp2_Pipeline') {
   triggers {
     scm('H/5 * * * *')
   }
-  description("Pipeline for PHP")
+  description("Pipeline for Webapp2")
+  
+   parameters {
+        stringParam('SERVER_ID', SERVER_ID, 'Enter Environment ID')
+    }
   
   definition {
     cpsScm {
