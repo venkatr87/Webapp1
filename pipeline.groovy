@@ -9,13 +9,8 @@ pipelineJob('Webapp2_Pipeline') {
   
    parameters {
      choiceParam('Environment', ['Dev', 'Test', 'UAT', 'Staging', 'Prod'], 'Select the Environment')
-     }
-     stringParam{
-      name('Environment IP')
-      description('Enter the IP Address')
-     }
-    }
-  
+     stringParam('Environment IP', '', 'Enter the IP Address')
+   }
   definition {
     cpsScm {
       scm {
