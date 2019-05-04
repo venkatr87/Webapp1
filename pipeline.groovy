@@ -10,7 +10,12 @@ pipelineJob('Webapp2_Pipeline') {
    parameters {
      choiceParam{
        name('Environment')
-       choices(Object 'Dev', 'Test')
+       description('Select the Environment')
+       choices('Dev', 'Test', 'UAT', 'Staging', 'Prod')
+     }
+     stringParam{
+      name('Environment IP')
+      description('Enter the IP Address')
      }
     }
   
