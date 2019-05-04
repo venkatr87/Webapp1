@@ -8,8 +8,10 @@ pipelineJob('Webapp2_Pipeline') {
   description("Pipeline for Webapp2")
   
    parameters {
-     choiceParam(name: 'Environment',choices: 'Dev\nUAT\nPRD',description: 'Please select Environment')
-     stringPAram(name:  'servername',description: 'Please enter ip address of Machine where you want to deploy')
+     choiceParam{
+       name(String 'Environment')
+       choices(Object 'Dev', 'Test')
+     }
     }
   
   definition {
